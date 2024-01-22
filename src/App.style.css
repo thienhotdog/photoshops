@@ -1,0 +1,135 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=VT323&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playball&family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: transparent;
+  border: 10px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(56, 56, 56);
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.pagination_item a {
+  display: inline-block;
+  padding: 4px 13px;
+}
+
+.pagination .pagination_item:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+
+.pagination_active {
+  border-radius: 3px;
+  background-color: #4cb050;
+  color: white;
+}
+
+.order-current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  box-shadow: 7px 7px 0 0 white;
+}
+
+.order-current::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  box-shadow: -7px 7px 0 0 white;
+}
+
+.shadow-custom {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.shadow-morphism {
+  background: #eef0f4;
+  box-shadow: inset 9.91px 9.91px 15px #d9dade,
+    inset -9.91px -9.91px 15px #ffffff;
+}
+
+.shadow-morphism:hover {
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+}
+
+.ant-carousel .slick-dots li {
+  height: 10px !important;
+  background: green !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: red !important;
+  opacity: 1;
+}
+.ant-carousel .slick-dots li button {
+  background: green !important;
+  color: green !important;
+}
+.ant-carousel .slick-dots li.slick-active {
+  background: red !important;
+}
+
+.ant-modal .ant-modal-close {
+  right: 5px;
+}
+
+.ant-collapse-header-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.ant-collapse-item {
+  /* background: none !important; */
+}
+
+@media only screen and (min-width: 1200px) {
+  .ant-modal-content {
+    margin-top: 150px;
+  }
+}
